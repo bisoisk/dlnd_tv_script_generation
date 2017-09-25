@@ -1,0 +1,406 @@
+
+(C:\ProgramData\Anaconda3) C:\Users\Administrator>cd..
+
+(C:\ProgramData\Anaconda3) C:\Users>cd..
+
+(C:\ProgramData\Anaconda3) C:\>cd..
+
+(C:\ProgramData\Anaconda3) C:\>d:
+
+(C:\ProgramData\Anaconda3) D:\>activate tensorflow5006
+
+(tensorflow5006) D:\>cd D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation
+
+(tensorflow5006) D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation>pip install -U
+ floyd-cli
+Collecting floyd-cli
+  Downloading floyd-cli-0.10.10.tar.gz
+Collecting click>=6.7 (from floyd-cli)
+  Downloading click-6.7-py2.py3-none-any.whl (71kB)
+    100% |################################| 71kB 458kB/s
+Collecting clint>=0.5.1 (from floyd-cli)
+  Downloading clint-0.5.1.tar.gz
+Collecting requests>=2.12.4 (from floyd-cli)
+  Downloading requests-2.18.4-py2.py3-none-any.whl (88kB)
+    100% |################################| 92kB 83kB/s
+Collecting requests-toolbelt>=0.7.1 (from floyd-cli)
+  Downloading requests_toolbelt-0.8.0-py2.py3-none-any.whl (54kB)
+    100% |################################| 61kB 245kB/s
+Collecting marshmallow>=2.11.1 (from floyd-cli)
+  Downloading marshmallow-2.13.6-py2.py3-none-any.whl (45kB)
+    100% |################################| 51kB 1.6MB/s
+Requirement already up-to-date: pytz>=2016.10 in c:\programdata\anaconda3\envs\t
+ensorflow5006\lib\site-packages (from floyd-cli)
+Collecting shortuuid>=0.4.3 (from floyd-cli)
+  Downloading shortuuid-0.5.0.tar.gz
+Collecting tabulate>=0.7.7 (from floyd-cli)
+  Downloading tabulate-0.7.7-py2.py3-none-any.whl
+Collecting pathlib2>=2.2.1 (from floyd-cli)
+  Downloading pathlib2-2.3.0-py2.py3-none-any.whl
+Collecting args (from clint>=0.5.1->floyd-cli)
+  Downloading args-0.1.0.tar.gz
+Collecting certifi>=2017.4.17 (from requests>=2.12.4->floyd-cli)
+  Downloading certifi-2017.7.27.1-py2.py3-none-any.whl (349kB)
+    100% |################################| 358kB 33kB/s
+Collecting idna<2.7,>=2.5 (from requests>=2.12.4->floyd-cli)
+  Downloading idna-2.6-py2.py3-none-any.whl (56kB)
+    100% |################################| 61kB 78kB/s
+Collecting urllib3<1.23,>=1.21.1 (from requests>=2.12.4->floyd-cli)
+  Downloading urllib3-1.22-py2.py3-none-any.whl (132kB)
+    100% |################################| 133kB 84kB/s
+Collecting chardet<3.1.0,>=3.0.2 (from requests>=2.12.4->floyd-cli)
+  Downloading chardet-3.0.4-py2.py3-none-any.whl (133kB)
+    100% |################################| 143kB 126kB/s
+Collecting six (from pathlib2>=2.2.1->floyd-cli)
+  Downloading six-1.11.0-py2.py3-none-any.whl
+Building wheels for collected packages: floyd-cli, clint, shortuuid, args
+  Running setup.py bdist_wheel for floyd-cli ... done
+  Stored in directory: C:\Users\Administrator\AppData\Local\pip\Cache\wheels\2f\
+00\01\7699a76853d02e4bbbe4521bdbe82c5e71e5cb587456b566cb
+  Running setup.py bdist_wheel for clint ... done
+  Stored in directory: C:\Users\Administrator\AppData\Local\pip\Cache\wheels\aa\
+65\4a\a0bceb0a6bee518b1dace4c803f24c4ac8febe55bdca0f14ed
+  Running setup.py bdist_wheel for shortuuid ... done
+  Stored in directory: C:\Users\Administrator\AppData\Local\pip\Cache\wheels\0b\
+50\5e\fae6e070b59ef891e16b518376682f9b084491c1832b99cc34
+  Running setup.py bdist_wheel for args ... done
+  Stored in directory: C:\Users\Administrator\AppData\Local\pip\Cache\wheels\0a\
+e0\66\35419f9f9ee41099a3631f0f308b9604bd1ffeabc066d69070
+Successfully built floyd-cli clint shortuuid args
+Installing collected packages: click, args, clint, certifi, idna, urllib3, chard
+et, requests, requests-toolbelt, marshmallow, shortuuid, tabulate, six, pathlib2
+, floyd-cli
+  Found existing installation: certifi 2016.2.28
+    Uninstalling certifi-2016.2.28:
+      Successfully uninstalled certifi-2016.2.28
+  Found existing installation: six 1.10.0
+    DEPRECATION: Uninstalling a distutils installed project (six) has been depre
+cated and will be removed in a future version. This is due to the fact that unin
+stalling a distutils project will only partially uninstall the project.
+    Uninstalling six-1.10.0:
+      Successfully uninstalled six-1.10.0
+Successfully installed args-0.1.0 certifi-2017.7.27.1 chardet-3.0.4 click-6.7 cl
+int-0.5.1 floyd-cli-0.10.10 idna-2.6 marshmallow-2.13.6 pathlib2-2.3.0 requests-
+2.18.4 requests-toolbelt-0.8.0 shortuuid-0.5.0 six-1.11.0 tabulate-0.7.7 urllib3
+-1.22
+
+(tensorflow5006) D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation>floyd login
+Authentication token page will now open in your browser. Continue? [Y/n]: y
+Please copy and paste the authentication token.
+This is an invisible field. Paste token and press ENTER:
+Login Successful
+
+(tensorflow5006) D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation>floyd init dln
+d_tv_script_generation
+Project name does not match your list of projects. Create your new project in th
+e web dashboard:
+        https://www.floydhub.com/projects/create
+
+(tensorflow5006) D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation>floyd run --gp
+u  --mode jupyter --env tensorflow5006
+Error: Missing .floydexpt file, run floyd init first
+
+(tensorflow5006) D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation>floyd run --mo
+de jupyter --gpu --env tensorflow5006
+Error: Missing .floydexpt file, run floyd init first
+
+(tensorflow5006) D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation>floyd run --mo
+de jupyter --gpu --env tensorflow5006
+Invalid project id, please run "floyd init PROJECT_NAME" before scheduling a job
+.
+
+(tensorflow5006) D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation>floyd init dln
+d_tv_script_generation
+Project "dlnd_tv_script_generation" initialized in current directory
+
+(tensorflow5006) D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation>floyd run --gp
+u  --mode jupyter --env tensorflow5006
+tensorflow5006 is not in the list of supported environments: tensorflow, chainer
+-1.23:py2, caffe, tensorflow-1.3, theano:py2, pytorch:py2, caffe:py2, theano-0.9
+:py2, pytorch-0.1:py2, chainer-2.0:py2, keras:py2, tensorflow-1.0, theano-0.8:py
+2, chainer:py2, tensorflow-0.12:py2, kur, tensorflow-1.0:py2, tensorflow-1.2, te
+nsorflow-1.1:py2, chainer-2.0, chainer, mxnet:py2, pytorch-0.2, tensorflow-0.12,
+ theano-0.9, chainer-1.23, tensorflow-1.3:py2, pytorch-0.1, tensorflow:py2, kera
+s, torch:py2, tensorflow-1.1, default, theano, pytorch, tensorflow-1.2:py2, torc
+h, pytorch-0.2:py2, theano-0.8
+
+(tensorflow5006) D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation>floyd run --gp
+u  --mode jupyter --env tensorflow-1.2
+Creating project run. Total upload size: 779.1KiB
+Syncing code ...
+[================================] 800149/800149 - 00:00:06
+
+JOB NAME
+-------------------------------------------
+susant/projects/dlnd_tv_script_generation/1
+
+Setting up your instance and waiting for Jupyter notebook to become available ..
+........
+
+Path to jupyter notebook: https://www.floydhub.com/notebooks/XASj3jQXFzraC3BGscR
+2r6
+
+(tensorflow5006) D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation>
+
+
+
+++++++++++++++Details+++++++++++++++
+
+XASj3jQXFzraC3BGscR2r6
+
+
+++++++++++++++Details+++++++++++++++
+
+
+
+
+
+
+
+
+fernando_constantino [1 month ago] 
+You probably have Tensorflow 1.3 with a recent python version.
+
+You should run your notebook in an older version of TF and probably python. Tensorflow 1.1 + Python 3.5 worked in my case.
+
+The cleanest way is to create a new conda Environment:
+conda create -n tf11_py35 python=3.5 tensorflow-gpu=1.1 jupyter
+
+
+floyd run --gpu  --mode jupyter --env tensorflow-1.1
+
+
+
+
+Do worry..Please follow the steps and it should work on windows,
+
+conda create -n tensorflow11 python=3.5
+activate tensorflow11
+conda install pandas matplotlib jupyter notebook scipy scikit-learn
+conda install -c conda-forge tensorflow=1.0.0
+conda install -c conda-forge tqdm
+
+
+
+
+
+
+
+
+
+""""""""""""""""""""""""""""""""""""""
+
+
+(C:\ProgramData\Anaconda3) C:\Users\Administrator>conda create -n tf11_py35 pyth
+on=3.5 tensorflow-gpu=1.1 jupyter
+Fetching package metadata ...........
+Solving package specifications: .
+
+Package plan for installation in environment C:\ProgramData\Anaconda3\envs\tf11_
+py35:
+
+The following NEW packages will be INSTALLED:
+
+    bleach:              1.5.0-py35_0
+    certifi:             2016.2.28-py35_0
+    colorama:            0.3.9-py35_0
+    cudatoolkit:         8.0-1
+    cudnn:               6.0-0
+    decorator:           4.1.2-py35_0
+    entrypoints:         0.2.3-py35_0
+    html5lib:            0.9999999-py35_0
+    icu:                 57.1-vc14_0       [vc14]
+    ipykernel:           4.6.1-py35_0
+    ipython:             6.1.0-py35_0
+    ipython_genutils:    0.2.0-py35_0
+    ipywidgets:          6.0.0-py35_0
+    jedi:                0.10.2-py35_2
+    jinja2:              2.9.6-py35_0
+    jpeg:                9b-vc14_0         [vc14]
+    jsonschema:          2.6.0-py35_0
+    jupyter:             1.0.0-py35_3
+    jupyter_client:      5.1.0-py35_0
+    jupyter_console:     5.2.0-py35_0
+    jupyter_core:        4.3.0-py35_0
+    libpng:              1.6.30-vc14_1     [vc14]
+    libprotobuf:         3.2.0-vc14_0      [vc14]
+    markupsafe:          1.0-py35_0
+    mistune:             0.7.4-py35_0
+    mkl:                 2017.0.3-0
+    nbconvert:           5.2.1-py35_0
+    nbformat:            4.4.0-py35_0
+    notebook:            5.0.0-py35_0
+    numpy:               1.12.1-py35_0
+    openssl:             1.0.2l-vc14_0     [vc14]
+    pandocfilters:       1.4.2-py35_0
+    path.py:             10.3.1-py35_0
+    pickleshare:         0.7.4-py35_0
+    pip:                 9.0.1-py35_1
+    prompt_toolkit:      1.0.15-py35_0
+    protobuf:            3.2.0-py35_0
+    pygments:            2.2.0-py35_0
+    pyqt:                5.6.0-py35_2
+    python:              3.5.4-0
+    python-dateutil:     2.6.1-py35_0
+    pyzmq:               16.0.2-py35_0
+    qt:                  5.6.2-vc14_6      [vc14]
+    qtconsole:           4.3.1-py35_0
+    setuptools:          36.4.0-py35_1
+    simplegeneric:       0.8.1-py35_1
+    sip:                 4.18-py35_0
+    six:                 1.10.0-py35_1
+    tensorflow-gpu:      1.1.0-np112py35_0
+    testpath:            0.3.1-py35_0
+    tornado:             4.5.2-py35_0
+    traitlets:           4.3.2-py35_0
+    vs2015_runtime:      14.0.25420-0
+    wcwidth:             0.1.7-py35_0
+    werkzeug:            0.12.2-py35_0
+    wheel:               0.29.0-py35_0
+    widgetsnbextension:  3.0.2-py35_0
+    win_unicode_console: 0.5-py35_0
+    wincertstore:        0.2-py35_0
+    zlib:                1.2.11-vc14_0     [vc14]
+
+Proceed ([y]/n)? y
+
+cudatoolkit-8. 100% |###############################| Time: 0:00:57   5.78 MB/s
+cudnn-6.0-0.ta 100% |###############################| Time: 0:00:45   2.21 MB/s
+libprotobuf-3. 100% |###############################| Time: 0:00:05   1.89 MB/s
+numpy-1.12.1-p 100% |###############################| Time: 0:00:01   2.06 MB/s
+werkzeug-0.12. 100% |###############################| Time: 0:00:00 927.79 kB/s
+protobuf-3.2.0 100% |###############################| Time: 0:00:00   1.12 MB/s
+tensorflow-gpu 100% |###############################| Time: 0:00:08   5.05 MB/s
+INFO menuinst_win32:__init__(182): Menu: name: 'Anaconda${PY_VER} ${PLATFORM}',
+prefix: 'C:\ProgramData\Anaconda3\envs\tf11_py35', env_name: 'tf11_py35', mode:
+'None', used_mode: 'system'
+INFO menuinst_win32:__init__(182): Menu: name: 'Anaconda${PY_VER} ${PLATFORM}',
+prefix: 'C:\ProgramData\Anaconda3\envs\tf11_py35', env_name: 'tf11_py35', mode:
+'None', used_mode: 'system'
+INFO menuinst_win32:__init__(182): Menu: name: 'Anaconda${PY_VER} ${PLATFORM}',
+prefix: 'C:\ProgramData\Anaconda3\envs\tf11_py35', env_name: 'tf11_py35', mode:
+'None', used_mode: 'system'
+#
+# To activate this environment, use:
+# > activate tf11_py35
+#
+# To deactivate an active environment, use:
+# > deactivate
+#
+# * for power-users using bash, you must source
+#
+
+
+(C:\ProgramData\Anaconda3) C:\Users\Administrator>
+(C:\ProgramData\Anaconda3) C:\Users\Administrator>activate tf11_py35
+
+(tf11_py35) C:\Users\Administrator>pip install -U floyd-cli
+Collecting floyd-cli
+Collecting click>=6.7 (from floyd-cli)
+  Using cached click-6.7-py2.py3-none-any.whl
+Collecting pytz>=2016.10 (from floyd-cli)
+  Downloading pytz-2017.2-py2.py3-none-any.whl (484kB)
+    100% |################################| 491kB 468kB/s
+Collecting pathlib2>=2.2.1 (from floyd-cli)
+  Using cached pathlib2-2.3.0-py2.py3-none-any.whl
+Collecting requests-toolbelt>=0.7.1 (from floyd-cli)
+  Using cached requests_toolbelt-0.8.0-py2.py3-none-any.whl
+Collecting clint>=0.5.1 (from floyd-cli)
+Collecting marshmallow>=2.11.1 (from floyd-cli)
+  Using cached marshmallow-2.13.6-py2.py3-none-any.whl
+Collecting requests>=2.12.4 (from floyd-cli)
+  Using cached requests-2.18.4-py2.py3-none-any.whl
+Collecting tabulate>=0.7.7 (from floyd-cli)
+  Using cached tabulate-0.7.7-py2.py3-none-any.whl
+Collecting shortuuid>=0.4.3 (from floyd-cli)
+Collecting six (from pathlib2>=2.2.1->floyd-cli)
+  Using cached six-1.11.0-py2.py3-none-any.whl
+Collecting args (from clint>=0.5.1->floyd-cli)
+Collecting chardet<3.1.0,>=3.0.2 (from requests>=2.12.4->floyd-cli)
+  Using cached chardet-3.0.4-py2.py3-none-any.whl
+Collecting urllib3<1.23,>=1.21.1 (from requests>=2.12.4->floyd-cli)
+  Using cached urllib3-1.22-py2.py3-none-any.whl
+Collecting idna<2.7,>=2.5 (from requests>=2.12.4->floyd-cli)
+  Using cached idna-2.6-py2.py3-none-any.whl
+Collecting certifi>=2017.4.17 (from requests>=2.12.4->floyd-cli)
+  Using cached certifi-2017.7.27.1-py2.py3-none-any.whl
+Installing collected packages: click, pytz, six, pathlib2, chardet, urllib3, idn
+a, certifi, requests, requests-toolbelt, args, clint, marshmallow, tabulate, sho
+rtuuid, floyd-cli
+  Found existing installation: six 1.10.0
+    DEPRECATION: Uninstalling a distutils installed project (six) has been depre
+cated and will be removed in a future version. This is due to the fact that unin
+stalling a distutils project will only partially uninstall the project.
+    Uninstalling six-1.10.0:
+      Successfully uninstalled six-1.10.0
+  Found existing installation: certifi 2016.2.28
+    Uninstalling certifi-2016.2.28:
+      Successfully uninstalled certifi-2016.2.28
+Successfully installed args-0.1.0 certifi-2017.7.27.1 chardet-3.0.4 click-6.7 cl
+int-0.5.1 floyd-cli-0.10.10 idna-2.6 marshmallow-2.13.6 pathlib2-2.3.0 pytz-2017
+.2 requests-2.18.4 requests-toolbelt-0.8.0 shortuuid-0.5.0 six-1.11.0 tabulate-0
+.7.7 urllib3-1.22
+
+(tf11_py35) C:\Users\Administrator>floyd login
+Authentication token page will now open in your browser. Continue? [Y/n]: y
+Please copy and paste the authentication token.
+This is an invisible field. Paste token and press ENTER:
+Login Successful
+
+(tf11_py35) C:\Users\Administrator>cd..
+
+(tf11_py35) C:\Users>cd..
+
+(tf11_py35) C:\>cd..
+
+(tf11_py35) C:\>d:
+
+(tf11_py35) D:\>cd D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation
+
+(tf11_py35) D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation>floyd init dlnd_tv_
+script_generation
+Project "dlnd_tv_script_generation" initialized in current directory
+
+(tf11_py35) D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation>floyd run --gp
+Error: no such option: --gp  (Possible options: --gpu, --gpu+)
+
+(tf11_py35) D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation>u  --mode jupyter -
+-env tf11_py35
+'u' is not recognized as an internal or external command,
+operable program or batch file.
+
+(tf11_py35) D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation>floyd run --gpu  --
+mode jupyter --env tf11_py35
+tf11_py35 is not in the list of supported environments: chainer, default, tensor
+flow-0.12, tensorflow-1.1, keras, chainer-2.0:py2, theano, theano:py2, chainer-2
+.0, tensorflow-1.3, kur, tensorflow, theano-0.8:py2, theano-0.9:py2, tensorflow-
+1.2:py2, pytorch-0.2, tensorflow:py2, tensorflow-1.0:py2, chainer:py2, chainer-1
+.23, tensorflow-1.0, pytorch:py2, chainer-1.23:py2, pytorch-0.1:py2, tensorflow-
+1.2, pytorch-0.2:py2, pytorch-0.1, torch:py2, pytorch, theano-0.9, theano-0.8, t
+ensorflow-1.1:py2, torch, keras:py2, caffe:py2, caffe, mxnet:py2, tensorflow-0.1
+2:py2, tensorflow-1.3:py2
+
+(tf11_py35) D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation>floyd run --gpu  --
+mode jupyter --env tensorflow-1.1
+Creating project run. Total upload size: 916.9KiB
+Syncing code ...
+[================================] 941675/941675 - 00:00:09
+
+JOB NAME
+-------------------------------------------
+susant/projects/dlnd_tv_script_generation/3
+
+Setting up your instance and waiting for Jupyter notebook to become available ..
+.......
+
+Path to jupyter notebook: https://www.floydhub.com/notebooks/RhCdN5UcsTWxepGiymj
+rjf
+
+(tf11_py35) D:\SKKKB\DS-DL-ND\Project-3\tv-script-generation>
+
+
+
+
+
+floyd run --gp
+u  --mode jupyter --env tensorflow-1.0.0
