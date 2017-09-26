@@ -402,5 +402,8 @@ rjf
 
 
 
-floyd run --gp
-u  --mode jupyter --env tensorflow-1.0.0
+floyd run --gpu  --mode jupyter --env tensorflow-1.0
+
+
+
+floyd run --gpu --env tensorflow-1.0 --mode jupyter --data diSgciLH4WA7HpcHNasP9j
